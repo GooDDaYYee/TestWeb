@@ -24,7 +24,7 @@
 
         li a {
             display: block;
-            color: white;
+            color: #FFFFFF;
             text-align: center;
             padding: 25px 30px;
             text-decoration: none;
@@ -39,17 +39,22 @@
         }
 
         h1 {
-            font-size: 80px;
+            color: #303030;
+            font-size: 90px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         h2 {
-            font-size: 30px;
+            color: 	#00D;
+            font-size: 50px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         h3 {
             font-size: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         h4 {
             font-size: 15px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -60,6 +65,7 @@
             max-width: 320px;
             height: auto !important;
             margin: auto;
+            background-color:#FFFFFF;
 
         }
 
@@ -69,6 +75,10 @@
             height: auto !important;
             margin: 20px;
             float: left;
+            background-color:#FFFFFF;
+        }
+        div.active {
+            background-color: #B0C4DE;
         }
     </style>
 </head>
@@ -78,43 +88,47 @@
         <li><a class="active" href="index.html">Profile</a></li>
         <li><a href="Page1.html">Information</a></li>
     </ul>
-
-    <div style="text-align: center;padding:20px;margin-top: 10px;background-color:#FFFFFF;height:1500px;">
-        <h1>Profile</h1>
-        <div class="polaroid">
-            <img src="img.jpg" alt="Me" style="width: 320PX;">
-            <h2 style="margin-top: 1mm;">Oakkharaphon kanthya</h2>
-            <h3 style="color: #0b0b52;margin-top: -3mm;">Bc.2101 Business Computer </h3>
-            <h4 style="color: #80430a;margin-top: -3mm;">Lannapoly Teachnic Chiangmai Teachnology College </h4>
-        </div>
+    <div style="text-align: center;padding:20px;margin-top: 10px;">
+            <h1>Profile</h1>
+            <div class="active">
+                <h2 style="padding-top: 30px;">History</h2>
+            <div class="polaroid">
+                <img src="img.jpg" alt="Me" style="width: 320PX;">
+                <h3 style="margin-top: 1mm;">Oakkharaphon kanthya</h3>
+                <p></p>
+                <p>Bc.2101 Business Computer </p>
+                <p>Lannapoly Teachnic Chiangmai Teachnology College </p>
+            </div>
         <br></br>
-        <h1>Education</h1>
+        </div>
+        <h2>Education</h2>
         <table style="margin: auto; ">
             <tr>
                 <th>
                     <div class="polaroid2">
-                        <img src="img2.jpg" alt="Me" style="width: 320PX;">
-                        <h2>Oakkharaphon kanthya</h2>
+                        <img src="img2.jpg" alt="Me" style="width: 260PX;">
+                        <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
                 <th>
                     <div class="polaroid2">
-                        <img src="img3.jpg" alt="Me" style="width: 320PX;">
-                        <h2>Oakkharaphon kanthya</h2>
+                        <img src="img3.jpg" alt="Me" style="width: 260PX;">
+                        <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
                 <th>
                     <div class="polaroid2">
-                        <img src="img4.jpg" alt="Me" style="width: 320PX;">
-                        <h2>Oakkharaphon kanthya</h2>
+                        <img src="img4.jpg" alt="Me" style="width: 260PX;">
+                        <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
             </tr>
         </table>
-        <h1>Portfolio</h1>
+        <br></br>
+        <h2>Portfolio</h2>
         <div class="polaroid">
             <img src="img1.jpg" alt="Me" style="width: 320PX;">
-            <h2>ดราฟรูปภาพ</h2>
+            <h3>ดราฟรูปภาพ</h3>
         </div>
     </div>
 </body>
