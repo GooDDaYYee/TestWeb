@@ -48,11 +48,13 @@
             color: 	#00D;
             font-size: 50px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 30px;
         }
 
         h3 {
             font-size: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 0px;
         }
 
         h4 {
@@ -63,7 +65,7 @@
         div.polaroid {
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.20);
             max-width: 320px;
-            height: auto !important;
+            height: auto;
             margin: auto;
             background-color:#FFFFFF;
 
@@ -72,31 +74,37 @@
         div.polaroid2 {
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
             max-width: 320px;
-            height: auto !important;
+            height: auto;
             margin: 20px;
             float: left;
             background-color:#FFFFFF;
         }
         div.active {
-            background-color: #B0C4DE;
+            background-color: #e7e6e6;
+            background: auto;
+        }
+        div.active1 {
+            background-color: #f7f4f4;
+            background: auto;
         }
     </style>
 </head>
 
 <body>
+    <div class="active1">
     <ul>
         <li><a class="active" href="index.html">Profile</a></li>
         <li><a href="Page1.html">Information</a></li>
     </ul>
-    <div style="text-align: center;padding:20px;margin-top: 10px;">
+    <div style="text-align: center;padding:20px;margin-top: 10px;color: #000;">
             <h1>Profile</h1>
             <div class="active">
-                <h2 style="padding-top: 30px;">History</h2>
+                <h2>History</h2>
             <div class="polaroid">
-                <img src="img.jpg" alt="Me" style="width: 320PX;">
+                <img src="img.jpg" alt="Me" style="width: 320PX;height: 320px;">
                 <h3 style="margin-top: 1mm;">Oakkharaphon kanthya</h3>
                 <p></p>
-                <p>Bc.2101 Business Computer </p>
+                <p>Bc.3101 Business Computer</p>
                 <p>Lannapoly Teachnic Chiangmai Teachnology College </p>
             </div>
         <br></br>
@@ -106,19 +114,19 @@
             <tr>
                 <th>
                     <div class="polaroid2">
-                        <img src="img2.jpg" alt="Me" style="width: 260PX;">
+                        <img src="img2.jpg" alt="Me" style="width: 260PX;height: 260px;">
                         <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
                 <th>
                     <div class="polaroid2">
-                        <img src="img3.jpg" alt="Me" style="width: 260PX;">
+                        <img src="img3.jpg" alt="Me" style="width: 260PX;height: 260px;">
                         <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
                 <th>
                     <div class="polaroid2">
-                        <img src="img4.jpg" alt="Me" style="width: 260PX;">
+                        <img src="img4.jpg" alt="Me" style="width: 260PX;height: 260px;">
                         <h3>Oakkharaphon kanthya</h3>
                     </div>
                 </th>
@@ -127,10 +135,11 @@
         <br></br>
         <h2>Portfolio</h2>
         <div class="polaroid">
-            <img src="img1.jpg" alt="Me" style="width: 320PX;">
+            <img src="img1.jpg" alt="Me" style="width: 320PX;height: 360px;">
             <h3>ดราฟรูปภาพ</h3>
         </div>
     </div>
+</div>
 </body>
 
 </html>
