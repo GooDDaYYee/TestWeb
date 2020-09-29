@@ -33,10 +33,7 @@
         li a:hover:not(.active) {
             background-color: #000000;
         }
-
-        .active {
-            background-color: #000066;
-        }
+        div.mySlides {display:none;}
     </style>
 </head>
 
@@ -45,32 +42,46 @@
         <li><a href="index.html">Profile</a></li>
         <li><a class="active" href="Page1.html">Information</a></li>
     </ul>
+          <div class="w3-content w3-display-container" style="max-width:800px margin: 1mm;">
+            <img class="mySlides" src="img1.jpg" style="width:50%;>
+            <img class="mySlides" src="img2.jpg" style="width:50%;>
+            <img class="mySlides" src="img3.jpg" style="width:50%;>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <script>
+var myIndex = 0;
+carousel();
 
-    <div style="text-align: center;padding:20px;margin-top:60px;background-color:#FFFFFF;height:1500px;">
-        <h1>Fixed Top Navigation Bar</h1>
-        <h2>Scroll this page to see the effect</h2>
-        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+            </script>
     </div>
 
 </body>
