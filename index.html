@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000033;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 25px 30px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #000000;
+        }
+
+        .active {
+            background-color: #000066;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h3 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h4 {
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div.polaroid {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.20);
+            max-width: 320px;
+            height: auto !important;
+            margin: auto;
+
+        }
+
+        div.polaroid2 {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+            max-width: 320px;
+            height: auto !important;
+            margin: 20px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Profile</a></li>
+        <li><a href="Page1.html">Information</a></li>
+    </ul>
+
+    <div style="text-align: center;padding:20px;margin-top: 10px;background-color:#FFFFFF;height:1500px;">
+        <h1>Profile</h1>
+        <div class="polaroid">
+            <img src="img.jpg" alt="Me" style="width: 320PX;">
+            <h2 style="margin-top: 1mm;">Oakkharaphon kanthya</h2>
+            <h3 style="color: #0b0b52;margin-top: -3mm;">Bc.2101 Business Computer </h3>
+            <h4 style="color: #80430a;margin-top: -3mm;">Lannapoly Teachnic Chiangmai Teachnology College </h4>
+        </div>
+        <br></br>
+        <h1>Education</h1>
+        <table style="margin: auto; ">
+            <tr>
+                <th>
+                    <div class="polaroid2">
+                        <img src="img2.jpg" alt="Me" style="width: 320PX;">
+                        <h2>Oakkharaphon kanthya</h2>
+                    </div>
+                </th>
+                <th>
+                    <div class="polaroid2">
+                        <img src="img3.jpg" alt="Me" style="width: 320PX;">
+                        <h2>Oakkharaphon kanthya</h2>
+                    </div>
+                </th>
+                <th>
+                    <div class="polaroid2">
+                        <img src="img4.jpg" alt="Me" style="width: 320PX;">
+                        <h2>Oakkharaphon kanthya</h2>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <h1>Portfolio</h1>
+        <div class="polaroid">
+            <img src="img1.jpg" alt="Me" style="width: 320PX;">
+            <h2>ดราฟรูปภาพ</h2>
+        </div>
+    </div>
+</body>
+
+</html>
