@@ -84,6 +84,7 @@
             background-color: #FFFFFF;
 
         }
+
         div.active {
             background-color: #e7e6e6;
             background: auto;
@@ -100,28 +101,28 @@
         <li><a href="index.html">Profile</a></li>
         <li><a class="active" href="Page1.html">Information</a></li>
     </ul>
-        <h1>Knowledge</h1>
-        <div style="text-align: center;color: #000;height: auto;margin: auto;">
-            <div class="mySlides">
-                <div class="polaroid">
-                <img src="img4.jpg" style="width: 1000px;height: 600px;">
+    <h1>Knowledge</h1>
+    <div style="text-align: center;color: #000;height: auto;margin: auto;">
+        <div class="mySlides">
+            <div class="polaroid">
                 <h3>sadsadsad</h3>
-                </div>
+                <img src="img4.jpg" style="width: 1000px;height: 600px;">
             </div>
-            <div class="mySlides">
-                <div class="polaroid">
-                <img src="img5.jpg" style="width: 1000px;height: 600px;">
-                <h3>sadsasadadsasadsasadsadsadsadsaddsad</h3>
-                </div>
-            </div>
-            <div class="mySlides">
-                <div class="polaroid">
-                <img src="img6.jpg" style="width: 1000px;height: 600px;">
-                <h3>sadsadssadsaadad</h3>
-                </div>
-            </div>
-
         </div>
+        <div class="mySlides">
+            <div class="polaroid">
+                <h3>sadsasadadsasadsasadsadsadsadsaddsad</h3>
+                <img src="img5.jpg" style="width: 1000px;height: 600px;">
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="polaroid">
+                <h3>sadsadssadsaadad</h3>
+                <img src="img6.jpg" style="width: 1000px;height: 600px;">
+            </div>
+        </div>
+    </div>
+    <br></br>
     <script>
         var myIndex = 0;
         carousel();
@@ -137,7 +138,7 @@
                 myIndex = 1
             }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            setTimeout(carousel, 5000); // Change image every 5 seconds
         }
     </script>
 
