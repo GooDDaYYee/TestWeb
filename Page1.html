@@ -24,7 +24,7 @@
 
         li a {
             display: block;
-            color: white;
+            color: #FFFFFF;
             text-align: center;
             padding: 25px 30px;
             text-decoration: none;
@@ -33,57 +33,79 @@
         li a:hover:not(.active) {
             background-color: #000000;
         }
-        div.mySlides {display:none;}
+
+        .active {
+            background-color: #000066;
+        }
+
+        h1 {
+            color: #303030;
+            font-size: 90px;
+            font-family: 'Tangerine', serif;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            font-family: 'Tangerine', serif;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Tangerine', serif;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 15px;
+            font-family: 'Tangerine', serif;
+            margin-top: -15px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: 'Tangerine', serif;
+            margin-top: -10px;
+            text-align: center;
+        }
+
+        div.polaroid {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+            max-width: 320px;
+            height: auto;
+            margin: auto;
+            background-color: #FFFFFF;
+
+        }
+
+        div.polaroid2 {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+            max-width: 320px;
+            height: auto;
+            margin: 20px;
+            float: left;
+            background-color: #FFFFFF;
+        }
+
+        div.active {
+            background-color: #e7e6e6;
+            background: auto;
+        }
     </style>
 </head>
 
-<body>
-    <ul>
-        <li><a href="index.html">Profile</a></li>
-        <li><a class="active" href="Page1.html">Information</a></li>
-    </ul>
-          <div class="w3-content w3-display-container" style="max-width:800px margin: 1mm;">
-            <img class="mySlides" src="img1.jpg" style="width:50%;>
-            <img class="mySlides" src="img2.jpg" style="width:50%;>
-            <img class="mySlides" src="img3.jpg" style="width:50%;>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-            </script>
-    </div>
-
+<body style="background-color: #f7f4f4">
+        <ul>
+            <li><a href="index.html">Profile</a></li>
+            <li><a class="active" href="Page1.html">Information</a></li>
+        </ul>
+        <h1>Knowledge</h1>
 </body>
 
 </html>
